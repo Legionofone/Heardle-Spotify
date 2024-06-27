@@ -94,6 +94,12 @@ It can be exited at anytime by using Ctrl+C in the terminal, or be refreshed by 
 ```sh
   rs
   ```
+
+## Docker Instructions
+```sh
+docker pull legionofone/hordel -e CLIENT_ID= -e CLIENT_SECRET -e URL="" -e PORT="" -p 8888:8888 
+```
+
 ## Having Problems?
 First, check the following: 
 - Your Spotify-application is open
