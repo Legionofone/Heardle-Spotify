@@ -11,7 +11,8 @@ require('dotenv').config();
 const client_id = process.env.CLIENT_ID; // Your client id
 const client_secret = process.env.CLIENT_SECRET; // Your secret
 const url = process.env.URL; // URL from env
-const redirect_uri = url + ':8888/callback'; // Your redirect uri
+const port = process.env.URL; // External port of your service
+const redirect_uri = url + ':' + port + '/callback'; // Your redirect uri
 const stateKey = 'spotify_auth_state';
 
 /**
