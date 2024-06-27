@@ -96,8 +96,12 @@ It can be exited at anytime by using Ctrl+C in the terminal, or be refreshed by 
   ```
 
 ## Docker Instructions
+Fill in the environmental variables on the command below and then go to your URL:PORT.
+Make sure to include "http://" or "https://" in your url. 
+If you want to use default 80/443, set port to 80/443
+You will need to include the port in the spotify app. e.g. https://yoururl:port/callback
 ```sh
-docker pull legionofone/hordel -e CLIENT_ID= -e CLIENT_SECRET -e URL="" -e PORT="" -p 8888:8888 
+docker run -e CLIENT_ID= -e CLIENT_SECRET= -e URL="" -e PORT="" -p 8888:8888 --name hordel legionofone/hordel
 ```
 
 ## Having Problems?
